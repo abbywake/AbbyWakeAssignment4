@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Add A Resturaunt";
+}
+<h1>@ViewData["Title"]</h1>
+
+@model AbbyWakeAssignment4.Models.addRes
+@Html.ValidationMessageFor(model => model.ResPhone)
+
+
+<form asp-action="addRest" method="post">
+
+    <div>
+        <label asp-for="Name">Your Name: </label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label asp-for="ResName">Resturaunt Name: </label>
+        <input asp-for="ResName" />
+    </div>
+
+    <div>
+        <label asp-for="FavDish">Favorite Dish: </label>
+        <input asp-for="FavDish" />
+    </div>
+
+    <div>
+        <label asp-for="ResPhone">Resturaunt Phone: </label>
+        <input asp-for="ResPhone" />
+    </div>
+
+    <button type="submit">Submit Resturaunt</button>
+</form>

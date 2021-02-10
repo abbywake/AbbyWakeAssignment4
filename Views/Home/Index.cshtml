@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<string>
+
+<!DOCTYPE html>
+<div class="text-center">
+    <header>
+        <title>Favorite Resturaunts</title>
+        <meta name="viewport" content="width-device-width"/>
+    </header>
+    <body>
+        <h1>Top 5 Resturaunts in Provo</h1>
+    </body>
+    
+        @foreach(string r in Model)
+        {
+            <p>@r</p>
+        }
+
+<img src="~/img/meal.jpg" width="500" />
+    
+
+</div>
