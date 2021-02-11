@@ -5,5 +5,8 @@
 }
 
 @model AbbyWakeAssignment4.Models.addRes
-
-<h1>This WOrked frick yeah</h1>
+    <center>
+        <!--small confirmation page with a link to view the restaurants that have been added-->
+        <h1>Thank you, @Model.Name for your restaurant submission!</h1>
+        <p>Click <a asp-action="viewAddRes">HERE</a> to see the list of restaurants that have been added.</p>
+    </center>

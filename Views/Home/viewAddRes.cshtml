@@ -3,4 +3,38 @@
 *@
 @{
 }
+@model IEnumerable<AbbyWakeAssignment4.Models.addRes>
 
+<html>
+<head>
+    <!--links for the bootstrap -->
+    <script src="~/js/index.js"></script>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<center>
+    <h1>
+        Added Restaurants
+    </h1>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+
+            <thead>
+                <tr><th scope="row">Your Name</th><th scope="row">Restaurant Name</th><th scope="row">Favorite Dish</th><th scope="row">Restaurant Phone</th></tr>
+            </thead>
+            <!--This is grabbing the info from the models which used the IEnumerable to iterate through all that is entered to print it out in the table-->
+            <tbody>
+                @foreach (AbbyWakeAssignment4.Models.addRes x in Model)
+                {
+                    <tr>
+                        <td scope="col">@x.Name</td>
+                        <td scope="col">@x.ResName</td>
+                        <td scope="col">@x.FavDish</td>
+                        <td scope="col">@x.ResPhone</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        </div>
+</center>
+</html>

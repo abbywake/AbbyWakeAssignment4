@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbbyWakeAssignment4.Models
 {
+    //class page so that happy customers can add resturaunts they like in provo too 
     public class addRes
     {
         [Required]
@@ -16,8 +17,7 @@ namespace AbbyWakeAssignment4.Models
 
         [Required]
         public string FavDish { get; set; }
-        [Required(ErrorMessage = "You must provide a phone number")]
-        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
-        public int ResPhone { get; set; }
+        [RegularExpression("[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]")]
+        public string ResPhone { get; set; }
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace AbbyWakeAssignment4.Models
 {
     public class Resturaunt
+        //making a class so I can enter information and then it will stay 
     {
         [Required]
        public int Rank { get; set; }
@@ -14,20 +15,20 @@ namespace AbbyWakeAssignment4.Models
         [Required]
        public string ResName { get; set; }
 
-
+        //if it's a null, make sure it says, "it's all yummy"
         public string? FavDish { get; set; } = "It's all yummy";
         [Required]
         public string Address { get; set; }
 
         [Phone]
         public string ResPhone { get; set; }
-
+        //same theory thinking with the if it's a null
         public string? Link { get; set; } = "Coming soon!";
 
 
         public static Resturaunt[] GetResturaunts()
         {
-
+            //this is where we made all of the information to store it on the page instead of through p tags or whatever
             Resturaunt r2 = new Resturaunt
             {
                 Rank = 2,
@@ -79,11 +80,11 @@ namespace AbbyWakeAssignment4.Models
 
        
 
-
+            //making sure we can return these bad bois
             return new Resturaunt[] { r1, r2, r3, r4, r5 };
         }
 
-
+        //ALSO DISCLAIMER. I LEARNED HOW TO SPELL RESTAURANT IN THE MIDDLE OF THIS PROJECT BUT THERE WAS NO WAY I WAS GOING TO TAKE THE TIME TO CHANGE ALL OF THEM
 
 
     }

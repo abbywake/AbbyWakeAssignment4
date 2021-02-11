@@ -28,6 +28,7 @@ namespace AbbyWakeAssignment4.Controllers
             return View(tempStorage.Applications);
         }
 
+        //on the index page, it makes it so it will "for each" x in the resturaunt it will add what we had created in the cs page to this form 
         public IActionResult Index()
         {
             List<string> ResList = new List<string>();
@@ -46,6 +47,8 @@ namespace AbbyWakeAssignment4.Controllers
         {
             return View();
         }
+        //giving the post and get a custom made link name. 
+        //in this iactionresult, it makes sure to add to the tempstorage and then take it to the confirmation page 
         [HttpPost("AddResturaunt")]
         public IActionResult addRest(addRes addResturaunt)
         {

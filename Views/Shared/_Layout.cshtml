@@ -1,17 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--layout page with all of this nice information-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Best Food In Provo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <!--we've got some nice bootstrap above-->
 </head>
 <body>
     <header>
+        <!--and below we've got our links and header info-->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AbbyWakeAssignment4</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Food 4 U</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,6 +34,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            <!--rendering that bad boy body-->
             @RenderBody()
         </main>
     </div>
@@ -39,6 +43,7 @@
         <div class="container">
             &copy; 2021 - Top Resturaunts in Provo</a>
         </div>
+        <!--some more of those bootstrap links lets go-->
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
